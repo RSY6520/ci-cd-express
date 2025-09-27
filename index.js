@@ -6,7 +6,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/randomNumber", (req, res) => {
-  res.json({ message: Math.random() });
+  res.json({ message: `${Math.random()} added random route` });
 });
 
 module.exports = app;
